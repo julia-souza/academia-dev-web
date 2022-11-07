@@ -1,0 +1,27 @@
+{
+  "name": "academia-dev-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julia-souza/academia-dev-web.git"
+  },
+  "keywords": [],
+  "author": "Júlia Souza e Luan Grillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julia-souza/academia-dev-web/issues"
+  },
+  "homepage": "https://github.com/julia-souza/academia-dev-web#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
+  }
+}
