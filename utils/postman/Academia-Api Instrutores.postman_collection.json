@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "1efb3582-dbe9-401a-b6e4-242159a451f9",
+		"name": "Academia-Api Instrutores",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21645490"
+	},
+	"item": [
+		{
+			"name": "Create instrutor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"instrutor2\",\r\n    \"dataNascimento\": \"2000/02/02\",\r\n    \"sexo\": \"F\",\r\n    \"email\": \"instrutor2@mail.com\",\r\n    \"senha\": \"senha\",\r\n    \"ativo\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/instrutores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"instrutores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find instrutor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/instrutores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"instrutores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find instrutor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/instrutores/635b36bcf86655090d30aa9f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"instrutores",
+						"635b36bcf86655090d30aa9f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update instrutor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"635b36bcf86655090d30aa9f\",\r\n    \"nome\": \"instrutor2\",\r\n    \"dataNascimento\": \"2000-02-02T02:00:00.000Z\",\r\n    \"sexo\": \"M\",\r\n    \"email\": \"instrutor2@mail.com\",\r\n    \"senha\": \"$2a$10$mQzXH2QsrTVAsM0pxAN1Ke1WI0h.gkUq8OCbh9Bclk0JQisv0HVzu\",\r\n    \"ativo\": false,\r\n    \"createdAt\": \"2022-10-28T01:56:12.211Z\",\r\n    \"updatedAt\": \"2022-10-28T01:56:12.211Z\",\r\n    \"__v\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/instrutores/635b36bcf86655090d30aa9f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"instrutores",
+						"635b36bcf86655090d30aa9f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete instrutor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"635b22559c592c4451ae7df4\",\r\n    \"nome\": \"user1\",\r\n    \"dataNascimento\": \"2000-01-01T02:00:00.000Z\",\r\n    \"sexo\": \"M\",\r\n    \"email\": \"user1@mail.com\",\r\n    \"senha\": \"$2a$10$g8peAtTJtezOIwC1o7uJJe.rw4b9CNs5PprTGaRt1y3K.VEF4N0.e\",\r\n    \"ativo\": false,\r\n    \"fichas\": [],\r\n    \"createdAt\": \"2022-10-28T00:29:10.086Z\",\r\n    \"updatedAt\": \"2022-10-28T00:29:10.086Z\",\r\n    \"__v\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/instrutores/635b36bcf86655090d30aa9f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"instrutores",
+						"635b36bcf86655090d30aa9f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
