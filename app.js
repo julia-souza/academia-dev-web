@@ -9,6 +9,7 @@ import routesFichas from './routes/routesFichas.js';
 import routesGruposMusculares from './routes/routesGruposMusculares.js';
 import routesTiposExerxixios from './routes/routesTiposExercicios.js';
 import connectDatabase from './database/database.js';
+import routesAuthorization from './routes/routesAuthorization.js';
 
 const app = express();
 
@@ -28,5 +29,6 @@ app.use('/api/instrutores', routesInstrutores);
 app.use('/api/fichas', routesFichas);
 app.use('/api/gruposmusculares', routesGruposMusculares);
 app.use('/api/tipoexercicios', routesTiposExerxixios);
+app.use('/api/auth', routesAuthorization);
 
 export default app;
